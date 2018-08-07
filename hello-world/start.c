@@ -2,10 +2,10 @@
 #include <linux/kernel.h>
 #include <linux/init.h>
 
-static int __init init(void)
+static int __init initHello(void)
 {
 	printk(KERN_INFO "Hello, world\n");
 	return 0;
 }
 
-module_init(init);
+module_init(initHello);
